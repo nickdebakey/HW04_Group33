@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/description"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="313dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/genre"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etDescription"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rating"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvGenre"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenre" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/year"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRating"
+        app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+    <TextView
+        android:id="@+id/tvIMDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/imdb"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+    <ImageView
+        android:id="@+id/ivFirst"
+        android:layout_width="63dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPrevious"
+        app:layout_constraintEnd_toStartOf="@+id/ivPrevious"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivPrevious"
+        app:srcCompat="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/ivPrevious"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bFinish"
+        app:layout_constraintEnd_toStartOf="@+id/bFinish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivFirst"
+        app:layout_constraintTop_toTopOf="@+id/bFinish"
+        app:srcCompat="@drawable/previous" />
+
+    <Button
+        android:id="@+id/bFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        app:layout_constraintBottom_toBottomOf="@+id/ivNext"
+        app:layout_constraintEnd_toStartOf="@+id/ivNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivPrevious"
+        app:layout_constraintTop_toTopOf="@+id/ivNext" />
+
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="62dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLast"
+        app:layout_constraintEnd_toStartOf="@+id/ivLast"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bFinish"
+        app:layout_constraintTop_toTopOf="@+id/ivLast"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/ivLast"
+        android:layout_width="66dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivNext"
+        app:srcCompat="@drawable/last" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

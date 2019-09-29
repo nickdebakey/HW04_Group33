@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HW04_Group33</string>
+    <string name="addMovie">Add Movie</string>
+    <string name="editMovie">Edit Movie</string>
+    <string name="deleteMovie">Delete Movie</string>
+    <string name="showListByYear">Show List By Year</string>
+    <string name="showListByRating">Show List By Rating</string>
+    <string name="name">Name:</string>
+    <string name="description">Description:</string>
+    <string name="genre">Genre:</string>
+    <string name="rating">Rating:</string>
+    <string name="year">Year:</string>
+    <string name="imdb">IMDB:</string>
+    <string name="finish">Finish</string>
+</resources>
